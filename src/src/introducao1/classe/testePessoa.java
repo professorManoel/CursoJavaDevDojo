@@ -1,4 +1,4 @@
-package intruducao.classe;
+package introducao1.classe;
 
 public class testePessoa {
     public static void main(String[] args) {
@@ -10,10 +10,14 @@ public class testePessoa {
         pessoa2 = new Pessoa("ivo", 34,'m');
         // objeto pessoa
 
-
+        Pessoa pessoa3 = new Pessoa();
         pessoa1.implimir();
         System.out.println("------------------------");
         pessoa2.implimir();
+        System.out.println("------------------------");
+        pessoa3.implimir();
+
+
 
     }
 }

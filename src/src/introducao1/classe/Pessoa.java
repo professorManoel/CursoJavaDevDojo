@@ -1,4 +1,4 @@
-package intruducao.classe;
+package introducao1.classe;
 
 public class Pessoa {
     // imagine que eu tenha uma idade, um nome, um sexo. mas que esses dados não estão se relacionando. para isso entra as classes.
@@ -8,9 +8,10 @@ public class Pessoa {
     private  int idade;
     private  char sexo;
 
-
+    public Pessoa(){}
     // construtor
     public Pessoa(String nome, int idade, char sexo) {
+
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
@@ -28,10 +29,9 @@ public class Pessoa {
     public String getNome() {
         return nome;
     }
-    public char getSexo() {
-        return sexo;
+    public void setSexo(char sexo) {
+        this.sexo = sexo;
     }
-
     public int getIdade() {
         return idade;
     }
@@ -42,8 +42,9 @@ public class Pessoa {
     public void setNome(String nome) {
             this.nome = nome;
     }
-
-    public void setSexo(char sexo) {
-        this.sexo = sexo;
+    public char getSexo() {
+        return sexo;
     }
+
+
 }
